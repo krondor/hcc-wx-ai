@@ -1,0 +1,207 @@
+# watsonx.ai Learning Hub - Git Ignore File
+# Houston Community College
+
+# Environment variables and credentials
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+credentials.json
+config.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+*.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# VS Code
+.vscode/
+*.code-workspace
+.history/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Data files (large datasets)
+*.csv
+*.parquet
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+data/large_datasets/
+data/downloads/
+
+# Model files (large binary files)
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+models/downloaded/
+models/checkpoints/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.cache/
+tmp/
+temp/
+
+# Test coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Documentation builds
+docs/_build/
+docs/_static/
+docs/_templates/
+site/
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Package files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Ignore notebook outputs (optional - uncomment if you want to track outputs)
+# *.ipynb
+
+# Ignore large data directories
+data/raw/
+data/processed/
+data/external/
+
+# Ignore model artifacts
+artifacts/
+outputs/
+checkpoints/
+
+# Ignore experiment tracking
+mlruns/
+.mlflow/
+wandb/
+
+# Ignore IDE-specific files
+*.sublime-project
+*.sublime-workspace
+.project
+.pydevproject
+.settings/
+
+# Ignore OS-specific files
+.Spotlight-V100
+.Trashes
+
+# Ignore package manager files
+poetry.lock
+Pipfile.lock
+package-lock.json
+yarn.lock
+
+# Ignore sensitive notebooks (if any)
+*_private.ipynb
+*_secret.ipynb
+*_credentials.ipynb
