@@ -3,9 +3,9 @@
 ![Python](https://img.shields.io/badge/python-3.9+-blue.svg)
 ![watsonx.ai](https://img.shields.io/badge/watsonx.ai-latest-purple.svg)
 ![License](https://img.shields.io/badge/license-Apache%202.0-green.svg)
-![HCC](https://img.shields.io/badge/Houston%20Community%20College-Official-red.svg)
+![HCC](https://img.shields.io/badge/Houston%20Community%20College-Partner-red.svg)
 
-Welcome to the Houston Community College watsonx.ai Learning Hub! This repository provides a comprehensive introduction to IBM watsonx.ai for students of all skill levels, featuring hands-on notebooks, tutorials, and real-world examples.
+Welcome to the Houston Community College watsonx.ai Learning Hub! This repository, built by IBM for Houston Community College, provides a comprehensive introduction to IBM watsonx.ai for students of all skill levels, featuring hands-on notebooks, tutorials, and real-world examples.
 
 ## 📚 Table of Contents
 
@@ -1492,8 +1492,8 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 ## 🙏 Acknowledgments
 
-- **Houston Community College** - For supporting AI education
-- **IBM watsonx.ai Team** - For providing the platform and documentation
+- **IBM watsonx.ai Team** - For building this learning hub and providing the platform
+- **Houston Community College** - For partnering with IBM to support AI education
 - **Contributors** - Thank you to all students and instructors who contribute
 - **Open Source Community** - For the amazing tools and libraries
 
@@ -1509,7 +1509,7 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 **Happy Learning! 🚀**
 
-*Built with ❤️ by Houston Community College students*
+*Built with ❤️ by IBM for Houston Community College*
 
 [⬆ Back to Top](#-houston-community-college---watsonxai-learning-hub)
 
