@@ -788,7 +788,24 @@ Choose your learning path based on your experience level and goals.
 
 ### 🐍 Python SDK Resources
 
+#### Understanding IBM Python Libraries
+
+**Important**: This repository uses two distinct IBM Python libraries. Understanding the difference is crucial:
+
+| Library | Purpose | Use When | Documentation |
+|---------|---------|----------|---------------|
+| **`ibm-watsonx-ai`** | Modern watsonx.ai SDK for foundation models, prompt engineering, and AI workflows | Working with foundation models (Granite, Llama), RAG, prompt tuning, fine-tuning, AutoAI | [watsonx.ai SDK Docs](https://ibm.github.io/watsonx-ai-python-sdk/) |
+| **`ibm-watson-studio-lib`** | Watson Studio library for notebook-based data science workflows and project management | Managing Watson Studio projects, assets, and connections within notebooks | [Watson Studio Lib Docs](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/watson-studio-lib.html) |
+
+**Key Differences**:
+- **`ibm-watsonx-ai`**: Focus on AI/ML model development, deployment, and inference (foundation models, AutoAI, deployments)
+- **`ibm-watson-studio-lib`**: Focus on Watson Studio project management, data connections, and asset management
+
+**This Repository Uses**: `ibm-watsonx-ai` for all examples and tutorials
+
 #### Installation & Setup
+
+**For watsonx.ai (Recommended for this repository)**:
 ```bash
 # Install watsonx.ai SDK
 pip install ibm-watsonx-ai
@@ -798,10 +815,64 @@ pip install ibm-watsonx-ai[langchain]
 pip install ibm-watsonx-ai[ray]
 ```
 
+**For Watson Studio Library** (if needed for project management):
+```bash
+# Install Watson Studio library
+pip install ibm-watson-studio-lib
+
+# Note: This is separate from ibm-watsonx-ai
+```
+
 #### Key Packages
-- `ibm-watsonx-ai` - Main SDK package
-- `ibm-watson-machine-learning` - Legacy ML package
-- `ibm-cloud-sdk-core` - Core IBM Cloud SDK
+- **`ibm-watsonx-ai`** - Main SDK for watsonx.ai (foundation models, AutoAI, deployments)
+- **`ibm-watson-studio-lib`** - Watson Studio project and asset management
+- **`ibm-watson-machine-learning`** - Legacy ML package (being replaced by ibm-watsonx-ai)
+- **`ibm-cloud-sdk-core`** - Core IBM Cloud SDK (dependency for above packages)
+
+#### Which Library Should I Use?
+
+**Use `ibm-watsonx-ai` when**:
+- Working with foundation models (Granite, Llama, Mixtral, etc.)
+- Building RAG applications
+- Using AutoAI for automated machine learning
+- Fine-tuning or prompt tuning models
+- Deploying models to production
+- Using Prompt Lab programmatically
+- **This is what all notebooks in this repository use**
+
+**Use `ibm-watson-studio-lib` when**:
+- Managing Watson Studio projects from within notebooks
+- Working with project assets and connections
+- Accessing Watson Studio-specific features
+- Managing data connections in Watson Studio environment
+
+**Example: Using ibm-watsonx-ai (Primary for this repo)**:
+```python
+from ibm_watsonx_ai import Credentials
+from ibm_watsonx_ai.foundation_models import ModelInference
+
+credentials = Credentials(
+    url="https://us-south.ml.cloud.ibm.com",
+    api_key="your_api_key"
+)
+
+model = ModelInference(
+    model_id="ibm/granite-13b-instruct-v2",
+    credentials=credentials,
+    project_id="your_project_id"
+)
+```
+
+**Example: Using ibm-watson-studio-lib (For project management)**:
+```python
+from ibm_watson_studio_lib import access_project_or_space
+
+# Access Watson Studio project
+wslib = access_project_or_space()
+
+# Get project metadata
+project_metadata = wslib.get_project_metadata()
+```
 
 ### 🎓 Learning Resources
 
