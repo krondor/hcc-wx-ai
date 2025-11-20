@@ -199,7 +199,7 @@ except Exception as e:
 
 ## 🏗️ Architecture & Technology Stack
 
-### Technology Stack Overview
+### 🔧 Technology Stack Overview
 
 ```mermaid
 graph TB
@@ -249,7 +249,7 @@ graph TB
     R --> D
 ```
 
-### Core Technologies
+### 💡 Core Technologies
 
 #### Apache Arrow
 **Purpose**: High-performance data interchange format
@@ -330,7 +330,7 @@ graph LR
 
 ## 🚀 Gen AI Stack Deep Dive
 
-### Foundation Model Library
+### 📚 Foundation Model Library
 
 watsonx.ai provides access to a curated library of foundation models:
 
@@ -342,7 +342,7 @@ watsonx.ai provides access to a curated library of foundation models:
 | **CodeLlama** | codellama-34b-instruct-hf | Code generation, debugging | 16K tokens |
 | **Time Series** | granite-timeseries-ttm-v1 | Forecasting, anomaly detection | Variable |
 
-### Prompt Lab
+### 🎯 Prompt Lab
 
 **Interactive prompt engineering interface** for testing and refining prompts.
 
@@ -379,7 +379,7 @@ for prompt in prompts:
     print(f"Prompt: {prompt}\nResponse: {response}\n")
 ```
 
-### Tuning Studio
+### 🔧 Tuning Studio
 
 **Customize foundation models** for your specific use cases.
 
@@ -437,7 +437,7 @@ tuning_job = prompt_tuning.run(
 )
 ```
 
-### Synthetic Data Generator
+### 🧪 Synthetic Data Generator
 
 **Create high-quality training data** from seed examples.
 
@@ -473,7 +473,7 @@ Generate diverse reviews with different sentiments and writing styles:"""
 synthetic_data = model.generate_text(prompt, params={"max_new_tokens": 500})
 ```
 
-### AutoAI
+### 🤖 AutoAI
 
 **Automated machine learning** for rapid model development.
 
@@ -645,7 +645,7 @@ Choose your learning path based on your experience level and goals.
 
 ## 📖 Notebook Catalog
 
-### Foundation Models & Text Generation
+### 🤖 Foundation Models & Text Generation
 
 #### 🟢 Beginner Level
 
@@ -663,7 +663,7 @@ Choose your learning path based on your experience level and goals.
 | **Mixtral Legal Analysis** | 1 hour | 🤖 Foundation Models, ⚖️ Legal | Analyze legal documents and contracts |
 | **Contract Summarization** | 1 hour | 🤖 Foundation Models, 📄 Summarization | Summarize complex legal contracts |
 
-### RAG (Retrieval Augmented Generation)
+### 📚 RAG (Retrieval Augmented Generation)
 
 #### 🟡 Intermediate Level
 
@@ -680,7 +680,7 @@ Choose your learning path based on your experience level and goals.
 | **Adaptive RAG with LangGraph** | 3 hours | 📚 RAG, 🕸️ Graphs | Build adaptive RAG with state management |
 | **LlamaIndex SQL Engine** | 2 hours | 📚 RAG, 🗄️ SQL | Query structured data with natural language |
 
-### AutoAI & Experiments
+### 🔬 AutoAI & Experiments
 
 #### 🟡 Intermediate Level
 
@@ -698,7 +698,7 @@ Choose your learning path based on your experience level and goals.
 | **AutoAI Fairness** | 2 hours | 🔬 AutoAI, ⚖️ Fairness | Build fair and unbiased models |
 | **AutoAI RAG** | 3 hours | 🔬 AutoAI, 📚 RAG | Automated RAG optimization |
 
-### Model Deployments
+### 🚀 Model Deployments
 
 #### 🟢 Beginner Level
 
@@ -724,7 +724,7 @@ Choose your learning path based on your experience level and goals.
 | **Custom Software Specs** | `notebooks/python_sdk/deployments/custom_software_spec/` | 🚀 Deployment, ⚙️ Advanced |
 | **AI Services** | `notebooks/python_sdk/deployments/ai_services/` | 🚀 Deployment, 🤖 Services |
 
-### Specialized Services
+### ⚙️ Specialized Services
 
 #### 🟡 Intermediate Level
 
@@ -738,7 +738,7 @@ Choose your learning path based on your experience level and goals.
 
 ## 📚 Resources & Documentation
 
-### Official IBM watsonx.ai Documentation
+### 📖 Official IBM watsonx.ai Documentation
 
 #### Getting Started
 - 🌐 [watsonx.ai Welcome Guide](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/welcome-main.html?context=wx&audience=wdp)
@@ -762,7 +762,7 @@ Choose your learning path based on your experience level and goals.
 - 🌐 [Online Deployments](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/ml-deploy-online.html)
 - 📦 [Batch Deployments](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/ml-deploy-batch.html)
 
-### Technology Stack Documentation
+### 📚 Technology Stack Documentation
 
 #### Data Processing
 - 🏹 [Apache Arrow](https://arrow.apache.org/docs/) - Columnar data format
@@ -786,7 +786,7 @@ Choose your learning path based on your experience level and goals.
 - 🦙 [LlamaIndex](https://docs.llamaindex.ai/) - Data framework for LLMs
 - 📊 [SPSS Modeler](https://www.ibm.com/docs/en/spss-modeler) - Visual data science
 
-### Python SDK Resources
+### 🐍 Python SDK Resources
 
 #### Installation & Setup
 ```bash
@@ -803,7 +803,7 @@ pip install ibm-watsonx-ai[ray]
 - `ibm-watson-machine-learning` - Legacy ML package
 - `ibm-cloud-sdk-core` - Core IBM Cloud SDK
 
-### Learning Resources
+### 🎓 Learning Resources
 
 #### IBM Learning Platforms
 - 🎓 [IBM Skills Network](https://skills.network/) - Free courses and labs
@@ -821,7 +821,7 @@ pip install ibm-watsonx-ai[ray]
 - 🎥 [watsonx.ai YouTube Channel](https://www.youtube.com/@IBMTechnology) - Video tutorials
 - 📺 [IBM Developer YouTube](https://www.youtube.com/@IBMDeveloper) - Technical deep dives
 
-### Additional Resources
+### 📚 Additional Resources
 
 #### Research Papers
 - 📄 [Granite Model Papers](https://www.ibm.com/granite) - IBM's foundation models
@@ -839,7 +839,7 @@ pip install ibm-watsonx-ai[ray]
 
 Get up and running with watsonx.ai in 15 minutes!
 
-### Step 1: Basic Text Generation (5 minutes)
+### 📝 Step 1: Basic Text Generation (5 minutes)
 
 ```python
 # Import required libraries
@@ -874,7 +874,7 @@ response = model.generate_text(
 print(response)
 ```
 
-### Step 2: Question Answering (5 minutes)
+### ❓ Step 2: Question Answering (5 minutes)
 
 ```python
 # Context-based Q&A
@@ -896,7 +896,7 @@ answer = model.generate_text(prompt, params={"max_new_tokens": 100})
 print(f"Q: {question}\nA: {answer}")
 ```
 
-### Step 3: Code Generation (5 minutes)
+### 💻 Step 3: Code Generation (5 minutes)
 
 ```python
 # Switch to code generation model
@@ -921,7 +921,7 @@ code = code_model.generate_text(
 print(code)
 ```
 
-### Next Steps
+### ⏭️ Next Steps
 
 1. ✅ **Explore notebooks** - Try the beginner path notebooks
 2. ✅ **Experiment with prompts** - Test different prompt styles
@@ -933,7 +933,7 @@ print(code)
 
 ## 🔧 Troubleshooting & FAQ
 
-### Common Issues
+### ⚠️ Common Issues
 
 #### Issue 1: Authentication Errors
 
@@ -1053,7 +1053,7 @@ pip install --upgrade ibm-watsonx-ai  # Or upgrade to latest
 pip show ibm-watsonx-ai
 ```
 
-### Frequently Asked Questions
+### ❓ Frequently Asked Questions
 
 #### General Questions
 
@@ -1255,7 +1255,7 @@ A: After completing the learning paths:
 
 We welcome contributions from HCC students and the broader community!
 
-### How to Contribute
+### 🤝 How to Contribute
 
 #### Adding a New Notebook
 
@@ -1293,7 +1293,7 @@ We welcome contributions from HCC students and the broader community!
    - Describe what your notebook does
    - Reference any related issues
 
-### Notebook Standards
+### 📋 Notebook Standards
 
 #### Structure
 ```markdown
@@ -1380,7 +1380,7 @@ except Exception as e:
     print("3. Ensure model ID is correct")
 ```
 
-### Reporting Issues
+### 🐛 Reporting Issues
 
 Found a bug or have a suggestion?
 
@@ -1393,21 +1393,21 @@ Found a bug or have a suggestion?
    - Environment details (Python version, OS, etc.)
    - Error messages or screenshots
 
-### Code Review Process
+### 👀 Code Review Process
 
 1. Maintainers will review your pull request
 2. Address any feedback or requested changes
 3. Once approved, your contribution will be merged
 4. You'll be added to the contributors list!
 
-### Recognition
+### 🏆 Recognition
 
 Contributors will be recognized in:
 - README contributors section
 - Release notes
 - HCC course acknowledgments
 
-### Questions?
+### ❓ Questions?
 
 - 💬 Open a GitHub discussion
 - 📧 Contact course instructors

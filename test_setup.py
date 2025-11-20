@@ -104,12 +104,14 @@ def test_watsonx_connection() -> Tuple[bool, str]:
         
     except Exception as e:
         error_msg = str(e)
-        if "401" in error_msg or "Unauthorized" in error_msg:
+        # Remove potential sensitive data from error message
+        error_msg_safe = error_msg.replace(os.getenv('WATSONX_API_KEY', ''), '***')
+        if "401" in error_msg_safe or "Unauthorized" in error_msg_safe:
             return False, "Authentication failed - check your API key"
-        elif "404" in error_msg or "not found" in error_msg.lower():
+        elif "404" in error_msg_safe or "not found" in error_msg_safe.lower():
             return False, "Project not found - check your Project ID"
         else:
-            return False, f"Connection error: {error_msg[:100]}"
+            return False, f"Connection error: {error_msg_safe[:100]}"
 
 def main():
     """Run all setup verification checks."""
