@@ -1,0 +1,22 @@
+# (c) Copyright IBM Corp. 2025
+
+task_description: This is a sample tool calling input
+min_func_count: 1
+max_func_count: 4
+created_by: IBM
+fc_spec_loaders:
+  - type: fc
+    file_path: base_tools.yaml
+seed_examples:
+- domain: autobot
+  input: Calculate the monthly payment for a loan of $200,000 with 5.2% annual interest rate and 20 year term. Calculate the repayment schedule for the loan.
+  output: '[ { "name": "calculate_loan_payment", "arguments": { "interest_rate": 5.2, "term": 20, "principal": 200000 } }, { "name": "calculate_repayment_schedule", "arguments": { "interest_rate": 5.2, "loan_amount": 200000, "loan_term": 20 } } ]'
+- domain: autobot
+  input: There is a sale going on for shoes priced at $120 with a 15% discount. How much does it cost after discount?
+  output: '[ { "name": "calculate_discount", "arguments": { "maximum_retail_price": 120, "discount_percentage": 15 } } ]'
+- domain: autobot
+  input: What is the BMI of a person who is 1.50 meters tall and weighs 80 kilograms? Is a person with BMI of 30 considered to be healthy?
+  output: '[ { "name": "calculate_bmi", "arguments": { "height": 1.50, "weight": 80 } }, { "name": "is_healthy_by_bmi", "arguments": { "bmi": 30} }  ]'
+- domain: autobot
+  input: I am looking for books written by Mark Twain.
+  output: '[ { "name": "find_books", "arguments": { "author": "Mark Twain" } } ]'

@@ -1,0 +1,51 @@
+[
+    {
+        "question": "How to install ibm-watsonx-ai library?",
+        "correct_answer": "pip install ibm-watsonx-ai",
+        "correct_answer_document_ids": [
+            "install.html"
+        ]
+    },
+    {
+        "question": "What is Credentails class parameters?",
+        "correct_answer": "url, api_key, name, iam_serviceid_crn, token, projects_token, username, password, instance_id, version, bedrock_url, proxies, verify",
+        "correct_answer_document_ids": [
+            "base.html"
+        ]
+    },
+    {
+        "question": "How to get AutoAI pipeline with number 3?",
+        "correct_answer": "get_pipeline(pipeline_name='Pipeline_3')",
+        "correct_answer_document_ids": [
+            "autoai_working_with_class_and_optimizer.html"
+        ]
+    },
+    {
+        "question": "How to get list of Embedding Models?",
+        "correct_answer": "client.foundation_models.EmbeddingModels",
+        "correct_answer_document_ids": [
+            "fm_embeddings.html"
+        ]
+    },
+    {
+        "question": "How to retrieve the list of model lifecycle data?",
+        "correct_answer": "get_model_lifecycle(url='https://us-south.ml.cloud.ibm.com', model_id='ibm/granite-13b-instruct-v2')",
+        "correct_answer_document_ids": [
+            "fm_helpers.html"
+        ]
+    },
+    {
+        "question": "What is path to ModelInference class?",
+        "correct_answer": "ibm_watsonx_ai.foundation_models.inference.ModelInference",
+        "correct_answer_document_ids": [
+            "fm_model_inference.html"
+        ]
+    },
+    {
+        "question": "What is method for get model inferance details?",
+        "correct_answer": "get_details()",
+        "correct_answer_document_ids": [
+            "fm_model_inference.html"
+        ]
+    }
+]

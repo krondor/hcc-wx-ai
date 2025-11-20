@@ -1,0 +1,130 @@
+# (c) Copyright IBM Corp. 2025
+
+autobot:
+  calculate_bmi:
+    description: Calculate the Body Mass Index (BMI)
+    name: calculate_bmi
+    parameters:
+      properties:
+        height:
+          description: The height in meters
+          type: number
+        weight:
+          description: The weight in kilograms
+          type: number
+      required:
+      - weight
+      - height
+      type: object
+  is_healthy_by_bmi:
+    description: Determine whether a person with given BMI is healthy or not
+    name: is_healthy_by_bmi
+    parameters:
+      properties:
+        bmi:
+          description: The BMI (body mass index) of a person
+          type: number
+      required:
+      - bmi
+      type: object
+  calculate_fahrenheit_to_celsius:
+    description: Convert given temperature from Fahrenheit to Celsius
+    name: calculate_fahrenheit_to_celsius
+    parameters:
+      properties:
+        temperature:
+          description: The temperature in Fahrenheit
+          type: number
+      required:
+      - temperature
+      type: object
+  calculate_circle_area:
+    description: Calculate the area of a circle
+    name: calculate_circle_area
+    parameters:
+      properties:
+        radius:
+          description: The radius of the circle
+          type: number
+      required:
+      - radius
+      type: object
+  calculate_circle_circumference:
+    description: Calculate the circumference of a circle
+    name: calculate_circle_circumference
+    parameters:
+      properties:
+        radius:
+          description: The radius of the circle
+          type: number
+      required:
+      - radius
+      type: object
+  calculate_discount:
+    description: Calculate the discounted price of an item
+    name: calculate_discount
+    parameters:
+      properties:
+        discount_percentage:
+          description: The percentage of discount
+          type: number
+        maximum_retail_price:
+          description: The maximum retail price of the product (i.e the original price)
+          type: number
+      required:
+      - maximum_retail_price
+      - discount_percentage
+      type: object
+  calculate_loan_payment:
+    description: Calculate the monthly loan payment
+    name: calculate_loan_payment
+    parameters:
+      properties:
+        interest_rate:
+          description: The annual interest rate of the loan
+          type: number
+        term:
+          description: The loan term in years
+          type: integer
+        principal:
+          description: The principal amount of the loan
+          type: number
+      required:
+      - principal
+      - interest_rate
+      - term
+      type: object
+  calculate_repayment_schedule:
+    description: Calculate the loan repayment schedule for a given loan
+    name: calculate_repayment_schedule
+    parameters:
+      properties:
+        interest_rate:
+          description: The annual interest rate
+          type: number
+        loan_amount:
+          description: The amount of the loan
+          type: number
+        loan_term:
+          description: The loan term in years
+          type: number
+      required:
+      - loan_amount
+      - interest_rate
+      - loan_term
+      type: object
+  find_books:
+    description: Search books based on given attributes
+    name: find_books
+    parameters:
+      properties:
+        author:
+          description: The author of the book
+          type: string
+        genre:
+          description: The genre of the book
+          type: string
+        title:
+          description: The title of the book
+          type: string
+      type: object

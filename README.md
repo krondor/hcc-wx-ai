@@ -1,2 +1,2 @@
-# hcc-wx-ai
-Houston Community College - Watsonx AI Introduction
+# Cloud samples
+`Watson Machine Learning` sample models, notebooks and applications.

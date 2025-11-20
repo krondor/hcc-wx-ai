@@ -1,0 +1,16 @@
+# (c) Copyright IBM Corp. 2025
+
+task_description: Natural Language to SQL query data generation task
+seed_examples:
+   - utterance: Get all schools in San Francisco
+     query: SELECT * FROM school WHERE city="San Francisco"
+   - utterance: List all closed schools
+     query: SELECT * FROM school WHERE status='closed'
+   - utterance: List all students who are older than 10 years
+     query: SELECT * FROM student WHERE age > 10
+   - utterance: List all students who are in 4th grade
+     query: SELECT * FROM student WHERE grade=4
+   - utterance: Fetch ID and name of students studying in National Public School
+     query: SELECT ST.id, ST.student_name FROM student ST, school SC where ST.studies_in=SC.id and SC.school_name='National Public School'
+database:
+   schema: "CREATE TABLE school (	id varchar(10) NOT NULL,	school_name varchar(25) NOT NULL,	city varchar(10) NOT NULL,	zipcode varchar(6) NOT NULL,	status varchar(10) NOT NULL,	CONSTRAINT school_pk PRIMARY KEY (id));CREATE TABLE student (id varchar(10) NOT NULL,	student_name varchar(10) NOT NULL, studies_in varchar(10) NOT NULL,	age integer NOT NULL,	grade integer NOT NULL,	CONSTRAINT student_pk PRIMARY KEY (id),	CONSTRAINT student_school_fk FOREIGN KEY (studies_in) REFERENCES school(id));"

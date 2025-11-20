@@ -1,0 +1,16 @@
+[
+    {
+        "question": "How can you set or refresh user request headers using the APIClient class?",
+        "correct_answer": "client.set_headers({'Authorization': 'Bearer <token>'})",
+        "correct_answer_document_ids": [
+            "base.html"
+        ]
+    },
+    {
+        "question": "How to initialise Credentials object with api_key",
+        "correct_answer": "credentials = Credentials(url = 'https://us-south.ml.cloud.ibm.com', api_key = '***********')",
+        "correct_answer_document_ids": [
+            "base.html"
+        ]
+    }
+]
